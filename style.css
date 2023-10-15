@@ -13,22 +13,33 @@ body{
     width: 100%;
     background: linear-gradient(#e66465, #9198e5);
     max-width: 540px;
-    margin: 100px auto 20px;
+    margin: 63px auto 63px auto;
     padding:10px 30px 70px;
     border-radius: 20px;
     border:5px solid wheat;
+    align-items: center;
 }
 .todo-app h1{
     display:flex;
     align-items: center;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding:0px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.heading{
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
 .row{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+        
     background-color: #9198e5;
     border-radius: 30px;
     padding-left:20px;
@@ -106,20 +117,63 @@ ul li span{
 
 ul li span:hover{
     background-color:darkslategrey;
-    color:cornsilk
+    color:cornsilk;
 }
+
 
 @media screen and (max-width: 600px) {
     body {
-        background-image: url('background-mobile.gif');
+        background-image: url(background-phone.jpg);
     }
 
     .todo-app {
         font-family: Arial, sans-serif;
-        background: linear-gradient(#e66465, #9198e5);
-        max-width: 100%;
-        margin: 50px auto 20px;
+        background:  linear-gradient(rgba(230, 100, 101, 0.8), rgba(145, 152, 229, 0.8));
+        max-width: 90%;
+        overflow-x: hidden;
+        max-height: 190vh; /* Limit the maximum height to 80% of the viewport height */
+        margin: 100px auto;
         padding: 10px 15px 70px;
     }
-}
 
+    .todo-app input {
+        font-size: 30px;
+        padding-right:10px;
+        width: 280px;
+    }
+
+    .todo-app button {
+        font-size: 30px;
+        border-radius: 30px;
+    }
+
+    .row{
+        margin: 10px 10px;
+        margin-bottom: 30px;
+    }
+
+    .todo-app ul li {
+        font-size: 30px;
+        padding-left: 65px;
+        margin-top: 10px;
+    }
+
+    .todo-app ul li::before {
+        height: 40px;   
+        width: 40px;
+    }
+
+    .todo-app ul li.checked::before {
+        height: 40px;
+        width: 40px;
+    }
+
+    .todo-app ul li span {
+        width: 40px;
+        height: 40px;
+        font-size: 50px;
+    }
+
+    
+
+}
