@@ -121,34 +121,45 @@ ul li span:hover{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
     body {
         background-image: url(background-phone.jpg);
+        background-size: cover;
+    }
+
+    *{
+        font-family:cursive;
     }
 
     .todo-app {
-        font-family: Arial, sans-serif;
         background:  linear-gradient(rgba(230, 100, 101, 0.8), rgba(145, 152, 229, 0.8));
         max-width: 90%;
         overflow-x: hidden;
-        max-height: 190vh; /* Limit the maximum height to 80% of the viewport height */
+        max-height: 190vh;
         margin: 100px auto;
         padding: 10px 15px 70px;
     }
 
     .todo-app input {
-        font-size: 30px;
+        font-size: 25px;
         padding-right:10px;
         width: 200px;
     }
 
     .todo-app button {
-        font-size: 30px;
+        font-size: 25px;
         border-radius: 30px;
+        padding: 20px;
+    }
+
+    .heading{
+        text-align: center;
+        align-items: center;
+        display: flex;
     }
 
     .row{
-        margin: 10px 10px;
+        margin: 10px auto;
         margin-bottom: 30px;
     }
 
@@ -156,6 +167,7 @@ ul li span:hover{
         font-size: 30px;
         padding-left: 65px;
         margin-top: 10px;
+        padding-right: 25px;
     }
 
     .todo-app ul li::before {
