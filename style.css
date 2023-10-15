@@ -109,3 +109,17 @@ ul li span:hover{
     color:cornsilk
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url('background-mobile.gif');
+    }
+
+    .todo-app {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(#e66465, #9198e5);
+        max-width: 100%;
+        margin: 50px auto 20px;
+        padding: 10px 15px 70px;
+    }
+}
+
