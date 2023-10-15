@@ -139,7 +139,7 @@ ul li span:hover{
     .todo-app input {
         font-size: 30px;
         padding-right:10px;
-        width: 280px;
+        width: 200px;
     }
 
     .todo-app button {
